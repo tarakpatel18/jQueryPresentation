@@ -1,3 +1,9 @@
+/*!
+ * jQuery Presentation Plugin
+ * https://github.com/tarakpatel18/jQueryPresentation
+ *
+ * Released under the GNU license
+ */
 jQuery.fn.jPresentation = function (options) {
     "use strict";
     var defaults = {
