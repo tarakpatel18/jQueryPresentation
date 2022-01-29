@@ -2,7 +2,7 @@
 
 ## Demo & Examples
 
-<https://mathiasbynens.github.io/jquery-placeholder/>
+<http://fjfj.xyz/jQueryPresentation/>
 
 ## About jQuery Presentation
 
@@ -17,8 +17,8 @@ This plugin is available under [the GNU license](https://www.gnu.org/licenses/gp
 
 ## Thanks to…
 
-Daniel Eden for Animate.css(http://daneden.me/animate)
-Icon Finder(https://www.iconfinder.com/)
+* Daniel Eden for https://animate.style/ (http://daneden.me/animate)
+* Icon Finder(https://www.iconfinder.com/)
 
 Thank you
 Tarak Patel
