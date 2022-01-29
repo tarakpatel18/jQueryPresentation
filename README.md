@@ -2,9 +2,9 @@
 
 ## Demo and Documentation
 
-[Demo](http://fjfj.xyz/presentation/)
+[Demo](http://fjfj.xyz/jQueryPresentation/)
 
-[Documentation](http://fjfj.xyz/presentation//documentation/)
+[Documentation](http://fjfj.xyz/jQueryPresentation//documentation/)
 
 ## About plugin
 
