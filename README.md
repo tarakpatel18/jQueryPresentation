@@ -1,8 +1,10 @@
 # jQuery Presentation
 
-## Demo & Examples
+## Demo and Documentation
 
-<http://fjfj.xyz/jQueryPresentation/>
+[Demo](http://fjfj.xyz/jQueryPresentation/)
+
+[Documentation](http://fjfj.xyz/jQueryPresentation//documentation/)
 
 ## About jQuery Presentation
 
@@ -21,4 +23,3 @@ This plugin is available under [the GNU license](https://www.gnu.org/licenses/gp
 * Icon Finder(https://www.iconfinder.com/)
 
 Thank you
-Tarak Patel
