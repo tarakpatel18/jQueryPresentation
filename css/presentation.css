@@ -1,0 +1,82 @@
+/* Presentation container */
+#presentationDiv {
+ width: 1000px; height: 500px; position: relative; margin: 20px auto; overflow: hidden;
+ background: linear-gradient( to right, rgba(0, 115, 255, 1) 0%, rgba(0, 200, 255, 1) 100% );
+ font-family: "Roboto", sans-serif; color: #000;
+}
+/* Start and restart button */
+#presentationDiv span.startP {
+  display: inline-block; padding: 10px; margin-top: 22%; margin-left: 37%; cursor: pointer;
+  background: #7dfff366; font-size: 30px; font-weight: bold; border-radius: 5px;
+}
+#presentationDiv span.startP.restart {
+  position: absolute; right: 10px; top: 10px; width: 20px; height: 20px; padding: 0;
+  margin-top: 0; font-size: 0; z-index: 999; background: url(../images/reload.png) no-repeat center;
+}
+#presentationDiv span.startP:not(.restart):hover { background: #eee; }
+/* Close button */
+#presentationDiv .closeP { width: 20px; height: 20px; position: absolute; right: 10px; bottom: 10px;
+ z-index: 99; background: url(../images/close.png) no-repeat center; display: none; cursor: pointer; }
+/* Slide */
+#presentationDiv .slide { height: 500px; width: 100%; overflow: hidden; position: absolute; left: 0; top: 0; }
+/* Common classes and style */
+#presentationDiv .slide * { position: absolute; font-weight: 300; margin: 0; padding: 0; }
+#presentationDiv h1 { font-size: 45px; }
+#presentationDiv h2 { font-size: 35px; }
+#presentationDiv h3 { font-size: 30px; }
+#presentationDiv h4 { font-size: 20px; }
+#presentationDiv .center { text-align: center; }
+#presentationDiv .fullWidth { width: 100%; }
+#presentationDiv .noOpacity { opacity: 0; }
+/* Slide 1 */
+#presentationDiv .companyName { left: 100px; top: -60px; }
+#presentationDiv .subTitle { top: 275px; left: -370px; }
+#presentationDiv .chrome { right: 224px; bottom: -140px; }
+#presentationDiv .firefox { bottom: 177px; right: -300px; }
+#presentationDiv .safari { right: 226px; top: -140px; }
+/* Slide 2 */
+#presentationDiv .aboutUs { left: -600px; top: 50px; }
+#presentationDiv .professional { top: 125px; right: 0px; }
+#presentationDiv .aboutimg { left: 320px; bottom: -350px; }
+/* Slide 3 */
+#presentationDiv .servicesTitle { left: 100px; top: -60px; }
+#presentationDiv .services { padding-left: 40px;
+ background: url(../images/check.png) no-repeat left center; left: -360px; }
+#presentationDiv .services.ns { top: 150px; }
+#presentationDiv .services.dsam { top: 190px; }
+#presentationDiv .services.cs { top: 230px; }
+#presentationDiv .services.dbs { top: 270px; }
+#presentationDiv .services.ic { top: 310px; }
+#presentationDiv .services.smc { top: 350px; }
+#presentationDiv .services.rs { top: 390px; }
+#presentationDiv .servicesImg1 { width: 170px; right: 160px; top: 90px; }
+#presentationDiv .servicesImg2 { width: 121px; right: 131px; top: 272px; }
+#presentationDiv .servicesImg3 { width: 150px; right: 272px; top: 242px; }
+/* Slide 4 */
+#presentationDiv .ourTeam { left: -600px; top: 50px; }
+#presentationDiv .emp { width: 150px; border-radius: 80px; top: 150px; opacity: 0; }
+#presentationDiv .emp.emp1 { left: 120px;}
+#presentationDiv .emp.emp2 { left: 320px; }
+#presentationDiv .emp.emp3 { left: 520px; }
+#presentationDiv .emp.emp4 { left: 720px; }
+#presentationDiv .empName { width: 150px; text-align: center; top: 320px; opacity: 0; }
+#presentationDiv .empName1 { left: 120px; }
+#presentationDiv .empName2 { left: 320px; }
+#presentationDiv .empName3 { left: 520px; }
+#presentationDiv .empName4 { left: 720px; }
+#presentationDiv .empTitle { width: 150px; text-align: center; top: 350px; opacity: 0; }
+#presentationDiv .empTitle1 { left: 120px; }
+#presentationDiv .empTitle2 { left: 320px; }
+#presentationDiv .empTitle3 { left: 520px; }
+#presentationDiv .empTitle4 { left: 720px; }
+/* Slide 4 */
+#presentationDiv .contactUs { width: 250px; top: 100px; right: 170px; }
+#presentationDiv .call { left: -200px; top:60px; }
+#presentationDiv .skype { left: -200px; top:160px; }
+#presentationDiv .youtube { left: -200px; top:260px; }
+#presentationDiv .fb { left: -200px; top:360px; }
+#presentationDiv .calltext { left: 200px; top:80px; }
+#presentationDiv .skypetext { left: 200px; top:178px; }
+#presentationDiv .youtubetext { left: 200px; top:278px; }
+#presentationDiv .fbtext { left: 200px; top:381px; }
+#presentationDiv .smile { bottom: -350px; right: 195px; }

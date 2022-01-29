@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>jQuery Presentation Documentation</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">jQuery Presentation</h1>
+        <br>
+        <p>Email: <a href="mailto:aeonian.in@gmail.com">aeonian.in@gmail.com</a></p>
+        <p>Thank you for purchasing this plugin.</p>
+        <p>If you have any questions that are beyond the scope of this help file, please contact me on the above email address.</p>
+        <hr>
+        <h2 id="toc">Table of Contents</h2>
+        <ol>
+            <li><a href="#aboutplugin">About jQuery Presentation</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#customization">Customization</a></li>
+            <li><a href="#credits">Sources and Credits</a></li>
+        </ol>
+        <hr>
+        <h3 id="aboutplugin">A) About jQuery Presentation - <a href="#toc">top</a></h3>
+        <p>
+            Using this plugin, you can create stunning presentations on the web.<br>
+            This plugin has awesome CSS effects, jQuery animation options, documentation, and 6 months of support.
+        </p>
+        <hr>
+        <h3 id="features">B) Features - <a href="#toc">top</a></h3>
+        <ol>
+            <li>Create presentations on the web</li>
+            <li>Awesome CSS effects & jQuery animation options</li>
+            <li>Stop and restart options</li>
+            <li>6 months of support</li>
+        </ol>
+        <hr>
+        <h3 id="customization">C) Customization - <a href="#toc">top</a></h3>
+        <p>
+            As a first step, you have to create a data (array) containing the details of each HTML tag which will be
+            displayed in the presentation.
+            <br>Once we click a start button data will be converted to HTML and HTML tags will show/hide in a
+            presentation one by one with animation.
+        </p>
+        <p>
+            We have to define name, content, attr, animation, cssEffect, and afterAnimation for each HTML tag.
+        </p>
+        <p>
+            Here is a simple understanding of the data and an explanation of each option.
+        </p>
+        <pre>
+
+    {
+        name: 'h1',
+        content: "Your Company Name",
+        attr: {
+            'class': 'companyName'
+        },
+        animation: ['top', 150, 500, 1000],
+        cssEffect: {
+            type: 'flipInY',
+            time: 1000
+        },
+        afterAnimation: ['opacity', 0, 1000, 9000]
+    }
+        </pre>
+        <div class="options">
+            <p class="mb0">
+                <strong>name</strong><br>
+                <i>name: 'h1'</i><br>
+                This option is to define the name of the tag. In the sample data, it is &lt;h1&gt;&lt;/h1&gt;.
+            </p>
+            <ul>
+                <li>Some examples of name</li>
+                <li>name: 'h1' (This is for a &lt;h1&gt;)</li>
+                <li>name: 'p' (This is for a &lt;p&gt;)</li>
+                <li>name: 'img' (This is for a &lt;img&gt;)</li>
+                <li>name: 'div' (This is for a &lt;div&gt;)</li>
+                <li>name: 'span' (This is for a &lt;span&gt;)</li>
+            </ul>
+            <p>
+                <strong>content</strong><br>
+                <i>content: "Your Company Name"</i><br>
+                This option is to define the content of the tag. In the sample data, it is &lt;h1&gt;Your Company
+                Name&lt;/h1&gt;
+            </p>
+            <p class="mb0">
+                <strong>attr</strong><br>
+                <i>{ 'class': 'companyName' }</i><br>
+                This option is to define the attributes of the tag. In the sample data, it is &lt;h1
+                class="companyName"&gt;Your Company Name&lt;/h1&gt;<br>
+                You can also apply multiple attributes.
+            </p>
+            <ul>
+                <li>Some examples of attr</li>
+                <li>attr: { 'src': 'images/chrome.png', 'class': 'chrome' } (This is for a image, apply src and class)</li>
+                <li>attr: { 'class': 'aboutUs center fullWidth' } (multiple classes apply to a HTML tag)</li>
+            </ul>
+            <p>
+                <strong>animation</strong><br>
+                <i>animation: ['top', 150, 500, 1000]</i><br>
+                This animation is same as jQuery animate() method. Click here to read more information about it <a
+                    href="http://www.w3schools.com/jquery/eff_animate.asp" target="_blank">jQuery animate() Method</a> OR <a
+                    href="https://api.jquery.com/animate/" target="_blank">.animate()</a><br>
+                This option has 4 parameters, first 3 are same as jQuery animate() parameters, 1st and 2nd are for CSS style
+                (in a sample data it is <i>top: '150px'</i>) and 3rd is animation speed (in a sample data it is
+                <i>0.5 second</i>).<br>
+                4th is a time duration, it means after this defined time duration &lt;h1&gt; will have this animation.<br>
+                In above sample data, you can see that &lt;h1&gt; tag has a class <i>companyName</i> and
+                <i>.companyName</i> has CSS properties <i>{ position: absolute; top: -60px; }</i> in a
+                CSS file so by default, it will not display in a presentation because it has -60px for top.<br>
+                but after 1 second of clicking a start button &lt;h1&gt; will appear with animation in a presentation and
+                after animation &lt;h1&gt; has <i>top: 150px;</i> property in a style attributes.<br>
+                <i>['top', 150, 500, 1000]</i>,<br>
+                'top' and 150 it's CSS propertie/value { top: '150px'; }<br>
+                500 is animation speed (0.5 second)<br>
+                1000 is time duration (1 second)
+            </p>
+            <p>
+                <strong>afterAnimation</strong><br>
+                <i>afterAnimation: ['opacity', 0, 1000, 9000]</i><br>
+                This is same as animation. no difference.<br>
+                But animation is used to show an HTML tag in a presentation and afterAnimation is used to hide an HTML tag
+                in the presentation once the HTML tag is already presented.<br>
+                In above sample data, afterAnimation is used for hide &lt;h1&gt;, so after 9 second of clicking a start
+                button &lt;h1&gt; will disappear with animation and after animation &lt;h1&gt; has <strong>opacity:
+                    0;</strong> property in a style attribute.
+            </p>
+            <p class="mb0">
+                <strong>cssEffect</strong><br>
+                <i>cssEffect: { type: 'flipInY', time: 1000 }</i><br>
+                Please click here to check out the various CSS effects on Animate.css <a href="http://daneden.me/animate"
+                    target="_blank">http://daneden.me/animate</a><br>
+                I created this option based on these CSS effects. This option has 2 properties type and time. Type refers to
+                CSS effects and time is a time duration (same as animation and afterAnimation).
+            </p>
+            <ul>
+                <li>Some examples of cssEffect</li>
+                <li>cssEffect: { type: 'rotateInUpLeft', time: 3000 } ('rotateInUpLeft' CSS effect will apply to a HTML tag
+                    after 3 seconds of clicking a start button)</li>
+                <li>cssEffect: { type: 'flip', time: 5000 } ('flip' CSS effect will apply to a HTML tag after 5 seconds of
+                    clicking a start button)</li>
+                <li>cssEffect: { type: 'rotateInUpRight', time: 7000 } ('rotateInUpRight' CSS effect will apply to a HTML
+                    tag after 7 seconds of clicking a start button)</li>
+                <li>cssEffect: { type: 'flipInY', time: 11000 } ('flipInY' CSS effect will apply to a HTML tag after 11
+                    seconds of clicking a start button)</li>
+                <li>cssEffect: { type: 'pulse', time: 21000 } ('pulse' CSS effect will apply to a HTML tag after 21 seconds
+                    of clicking a start button)</li>
+            </ul>
+            <p class="mb0">Apart from this there are some other things you need to know.</p>
+            <p><strong>startButtonText:</strong> by using this option you can update start button text (Check out the code below for how to define it).</p>
+            <pre>
+        $('#presentationDiv').jPresentation({
+            'startButtonText': 'Type your text here...',
+            'data': data
+        });</pre>
+            <p>Also, when you create a data array, you need to write the following code so, after a defined time duration, a presentation will be over.</p>
+            <pre>
+        {
+            name: 'over',
+            time: 46500
+        }</pre>
+        <p class="highlight">After reading all the items here check the data array from index.html so you can understand how it works.</p>
+        </div>
+
+        <h3 id="credits">D) Sources and Credits - <a href="#toc">top</a></h3>
+        <ol>
+            <li>Daniel Eden for Animate.css <a href="http://daneden.me/animate"
+                    target="_blank">http://daneden.me/animate</a></li>
+            <li><a href="https://www.iconfinder.com/" target="_blank">Icon Finder</a></li>
+            <li>Google Search and Google Translate</li>
+        </ol>
+        <hr>
+        <p>Once again, thank you so much for purchasing jQuery Presentation. As I said at the beginning, I'd be glad to
+            help you if you have any questions relating to this plugin. I'll do my best to assist.</p>
+        <p>Thank you</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/* Page title */
+.mainTitle {
+  font-family: "Roboto", sans-serif; color: #000; font-size: 50px; font-weight: 300;
+  text-align: center; margin-top: 20px;;
+}
+/* Document button */
+.buttons { text-align: center; margin-top: 20px; }
+.buttons a { display: inline-block; font-family: "Roboto", sans-serif; color: #000; font-size: 20px;
+  font-weight: 300; text-decoration: none; background: #ddd; padding: 10px; border-radius: 10px;
+}
+.buttons a:hover { background: #aaa; }
