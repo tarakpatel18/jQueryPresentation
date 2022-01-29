@@ -9,7 +9,7 @@
 ## About plugin
 
 Using this plugin, you can create stunning presentations on the web.
-This plugin has awesome CSS effects, jQuery animation options, documentation, and 6 months of support.
+This plugin has awesome CSS effects, jQuery animation options, and documentation.
 For more detail please check documentation page on demo site.
 
 ## License
