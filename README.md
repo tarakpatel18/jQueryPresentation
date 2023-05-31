@@ -2,9 +2,9 @@
 
 ## Demo and Documentation
 
-[Demo](http://niin.co.in/jQueryPresentation/)
+[Demo](http://nioc.co.in/jQueryPresentation/)
 
-[Documentation](http://niin.co.in/jQueryPresentation//documentation/)
+[Documentation](http://nioc.co.in/jQueryPresentation//documentation/)
 
 ## About plugin
 
